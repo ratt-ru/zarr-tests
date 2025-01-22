@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 zarr = "^3.0.1"
 pytest = "^8.3.4"
+icechunk = "^0.1.0a12"
 
 
 [build-system]
