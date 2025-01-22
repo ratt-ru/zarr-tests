@@ -19,7 +19,7 @@ def populated_zarr_store(tmp_path):
   for g in [a, b]:
     g.attrs["basic"] = {"i": 2, "j": 3.0}
     g.create_array("DATA", shape=(1000, 1000), dtype=np.complex64)
-    g.create_array("INDEX", shape=1000, dtype=np.in64)
+    g.create_array("INDEX", shape=1000, dtype=np.int64)
 
   yield store
 
