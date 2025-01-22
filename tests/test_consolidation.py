@@ -60,7 +60,7 @@ def test_consolidated_at_dataset(populated_zarr_store, consolidated):
   assert (root.metadata.consolidated_metadata is not None) is consolidated
 
   # Consolidated metadata at the secondary group (dataset) level
-  # still exists but I think is ignored in favour or root level consolidated metadata according
+  # inherits from the root level consolidated metadata according to
   # https://zarr.readthedocs.io/en/stable/user-guide/consolidated_metadata.html#usage
   for _, group in root.groups():
     assert (group.metadata.consolidated_metadata is not None) is consolidated
