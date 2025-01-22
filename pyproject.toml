@@ -4,12 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Simon Perkins <simon.perkins@gmail.com>"]
 readme = "README.md"
+packages = [{ include = "zarr-tests" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 zarr = "^3.0.1"
 pytest = "^8.3.4"
-icechunk = "^0.1.0a12"
+icechunk = "== 0.1.0a12"
 xarray = "^2025.1.1"
 
 
